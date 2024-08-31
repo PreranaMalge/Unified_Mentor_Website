@@ -1,0 +1,198 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(./Images/hero.jpg);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.logo img{
+    width: 10px;
+    height: auto;
+    color:purple;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: black;
+    text-decoration: none;
+    background-color: chocolate;
+    border-radius: 5px;
+
+}
+
+.hero {
+    
+    /* background-image: url(./Images/hero.jpg); */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero p{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red;
+}
+.hero h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+hero .cta-button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.mentors {
+    background: #f4f4f4;
+}
+
+.mentor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mentor-card {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.mentor-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.mentor-detail {
+    background: #fff;
+    padding: 2rem;
+}
+.mentor-detail img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+
+
+}
+.contact h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form label{
+    display:block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.contact_section{
+    display: inline;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact {
+    background: #f4f4f4;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section{
+    align-items: center;
+
+}
+footer p{
+    text-align: center;
+    display: flex;
+    font-size: small;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .mentor-grid {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
